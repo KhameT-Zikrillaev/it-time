@@ -6,6 +6,7 @@ export const VideoCard = ({ card, videoUrl, isPlaying, handleVideoControl, i18n 
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
   const [volume, setVolume] = useState(1);
+  const [isContentVisible, setIsContentVisible] = useState(false);
 
   const handleVolumeChange = (e) => {
     const newVolume = parseFloat(e.target.value);
@@ -32,14 +33,19 @@ export const VideoCard = ({ card, videoUrl, isPlaying, handleVideoControl, i18n 
         loop
         muted={isMuted}
         playsInline
+        onClick={() => setIsContentVisible(true)}
       >
         <source src={videoUrl} type="video/mp4" />
         {t('home.ThirdMoviePage.browserNotSupported')}
       </video>
-      <div className="video-overlay">
+      <div className={`video-overlay ${isContentVisible ? 'active' : ''}`}>
         <button 
           className="video-control-btn play-pause-btn"
-          onClick={() => handleVideoControl(videoRef.current)}
+          onClick={(e) => {
+            e.stopPropagation();
+            handleVideoControl(videoRef.current);
+            setIsContentVisible(false);
+          }}
         >
           {isPlaying ? (
             <svg className="control-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

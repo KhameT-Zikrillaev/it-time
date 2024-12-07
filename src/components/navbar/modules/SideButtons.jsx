@@ -2,8 +2,16 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FaHome, FaBookOpen, FaUsers, FaPhoneAlt, FaInfoCircle } from 'react-icons/fa'
 import { scrollToTop } from '../../../helpers/scroll';
+
 export default function SideButtons() {
   const location = useLocation()
+
+  // Проверяем, нужно ли скрыть кнопки
+  const shouldHideButtons = location.pathname.includes('/courses/') || 
+                          (location.pathname.split('/').length > 2 && location.pathname.startsWith('/courses'));
+
+  // Если нужно скрыть кнопки, не рендерим компонент
+  if (shouldHideButtons) return null;
 
   return (
     <>
@@ -31,8 +39,9 @@ export default function SideButtons() {
                             after:w-2 after:h-full after:bg-gradient-to-b after:from-red-400 after:to-red-600
                             before:content-[''] before:absolute before:top-0 before:right-0
                             before:w-full before:h-2 before:bg-gradient-to-r before:from-red-400 before:to-red-600
-                            ${location.pathname === item.to ? 'from-red-500 to-red-600 w-16 shadow-red-500/50 max-[480px]:w-12' : ''}
-                            max-[480px]:w-8 max-[480px]:h-8 max-[480px]:hover:w-10`}>
+                            ${location.pathname === item.to ? 'from-red-500 to-red-600 w-16 shadow-red-500/50' : ''}
+                            max-[480px]:w-8 max-[480px]:h-8
+                            ${location.pathname === item.to ? 'max-[480px]:!w-10' : ''}`}>
                 <item.icon className="text-white text-xl max-[480px]:text-sm" />
               </div>
 
