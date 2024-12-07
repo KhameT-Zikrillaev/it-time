@@ -3,7 +3,8 @@ import { useEffect } from "react";
 const ParticlesBackground = () => {
     useEffect(() => {
         if (window.particlesJS) {
-            window.particlesJS.load("particles-js", "/particles.json", function () {
+            const configFile = window.innerWidth <= 768 ? "/particles-mobile.json" : "/particles.json";
+            window.particlesJS.load("particles-js", configFile, function () {
                 console.log("Particles.js config loaded");
             });
         }

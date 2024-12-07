@@ -8,7 +8,7 @@ export default function SideButtons() {
   return (
     <>
       {/* Боковая навигация слева */}
-      <div className="fixed top-1/2 -translate-y-1/2 left-0 z-40">
+      <div className="fixed top-1/2 -translate-y-1/2 left-0 z-40 max-[768px]:-left-[1.5%]">
         <div className="flex flex-col gap-4">
           {[
             { to: '/', icon: FaHome, label: 'Asosiy' },
