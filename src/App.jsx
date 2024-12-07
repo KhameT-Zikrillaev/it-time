@@ -8,6 +8,8 @@ import FooterLayout from './layout/FooterLayout';
 import Loading from './animations/loading';
 import CallButton from './components/CallButton';
 import ScrollToTop from './components/ScrollToTop';
+import { Routes, Route } from 'react-router-dom';
+import NotFound from './pages/NotFound';
 
 function App() {
   const [loadingActive, setLoadingActive] = useState(true);
@@ -35,17 +37,20 @@ function App() {
 
   return (
    <>
-
-
       {loadingActive && <Loading />
       }
 
       {layoutgActive &&  
-      <div className="wrapper min-h-screen bg-gray-50">
-     <HeaderLayout/>
-     <MainLayout/>
-     <FooterLayout/>
-     </div>
+      <Routes>
+        <Route path="/" element={
+          <div className="wrapper min-h-screen bg-gray-50">
+            <HeaderLayout/>
+            <MainLayout/>
+            <FooterLayout/>
+          </div>
+        } />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       }
 
       <CallButton />

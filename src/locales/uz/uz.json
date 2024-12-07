@@ -629,5 +629,11 @@
       "minLength": "Ish tajribangiz haqida kamida 10 ta belgi kiriting",
       "maxLength": "Ish tajribangiz 1000 ta belgidan oshmasligi kerak"
     }
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Sahifa topilmadi",
+    "description": "Siz qidirayotgan sahifa mavjud emas yoki ko'chirilgan.",
+    "button": "Bosh sahifaga qaytish"
   }
 }

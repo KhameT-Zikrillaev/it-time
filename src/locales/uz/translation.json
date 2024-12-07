@@ -1,0 +1,8 @@
+{
+  "notFound": {
+    "title": "404",
+    "subtitle": "Sahifa topilmadi",
+    "description": "Siz qidirayotgan sahifa mavjud emas yoki ko'chirilgan.",
+    "button": "Bosh sahifaga qaytish"
+  }
+}

@@ -604,5 +604,11 @@
       "minLength": "Please enter at least 10 characters about your work experience",
       "maxLength": "Work experience information should not exceed 1000 characters"
     }
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Page Not Found",
+    "description": "The page you are looking for doesn't exist or has been moved.",
+    "button": "Go Back Home"
   }
 }
