@@ -1,10 +1,44 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FaHome, FaBookOpen, FaUsers, FaPhoneAlt, FaInfoCircle } from 'react-icons/fa'
 import { scrollToTop } from '../../../helpers/scroll';
 
 export default function SideButtons() {
   const location = useLocation()
+  const [isVisible, setIsVisible] = useState(true);
+  const timeoutRef = useRef(null);
+
+  useEffect(() => {
+    // Начальный таймер при загрузке страницы
+    timeoutRef.current = setTimeout(() => {
+      setIsVisible(false);
+    }, 3000);
+
+    const handleScroll = () => {
+      // Очищаем предыдущий таймер при каждом скролле
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+
+      // Показываем кнопки
+      setIsVisible(true);
+      
+      // Устанавливаем новый таймер
+      timeoutRef.current = setTimeout(() => {
+        setIsVisible(false);
+      }, 3000);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Очистка при размонтировании
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   // Проверяем, нужно ли скрыть кнопки
   const shouldHideButtons = location.pathname.includes('/courses/') || 
@@ -16,7 +50,8 @@ export default function SideButtons() {
   return (
     <>
       {/* Боковая навигация слева */}
-      <div className="fixed top-1/2 -translate-y-1/2 left-0 z-40 max-[768px]:-left-[1.5%]">
+      <div className={`fixed top-1/2 -translate-y-1/2 left-0 z-40 max-[768px]:-left-[1.5%] transition-transform duration-500
+                      ${!isVisible && window.innerWidth <= 768 ? 'max-[768px]:-translate-x-full' : ''}`}>
         <div className="flex flex-col gap-4">
           {[
             { to: '/', icon: FaHome, label: 'Asosiy' },
@@ -41,7 +76,8 @@ export default function SideButtons() {
                             before:w-full before:h-2 before:bg-gradient-to-r before:from-red-400 before:to-red-600
                             ${location.pathname === item.to ? 'from-red-500 to-red-600 w-16 shadow-red-500/50' : ''}
                             max-[480px]:w-8 max-[480px]:h-8
-                            ${location.pathname === item.to ? 'max-[480px]:!w-10' : ''}`}>
+                            ${location.pathname === item.to ? 'max-[480px]:!w-10' : ''}
+                            ${!isVisible ? 'opacity-0' : ''}`}>
                 <item.icon className="text-white text-xl max-[480px]:text-sm" />
               </div>
 
