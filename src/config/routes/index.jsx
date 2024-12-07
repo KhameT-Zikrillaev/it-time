@@ -6,6 +6,7 @@ import Contact from '../../pages/contact';
 import Courses from '../../pages/courses';
 import Mentors from '../../pages/mentors';
 import CourseDetail from '../../pages/courses/pages/CourseDetail';
+import NotFound from '../../pages/NotFound';
 
 export const routes = [
   {
@@ -32,6 +33,10 @@ export const routes = [
     path: '/contact',
     element: <Contact/>
   },
+  {
+    path: '*',
+    element: <NotFound />
+  }
 ];
 
 function RootRoute() {
