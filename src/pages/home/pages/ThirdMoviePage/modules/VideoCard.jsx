@@ -26,7 +26,7 @@ export const VideoCard = ({ card, videoUrl, isPlaying, handleVideoControl, i18n 
   };
 
   return (
-    <>
+    <> 
       <video
         ref={videoRef}
         className="student-video"
@@ -34,11 +34,12 @@ export const VideoCard = ({ card, videoUrl, isPlaying, handleVideoControl, i18n 
         muted={isMuted}
         playsInline
         onClick={() => setIsContentVisible(true)}
+        data-aos="flip-left" data-aos-offset="100"
       >
         <source src={videoUrl} type="video/mp4" />
         {t('home.ThirdMoviePage.browserNotSupported')}
       </video>
-      <div className={`video-overlay ${isContentVisible ? 'active' : ''}`}>
+      <div  className={`video-overlay ${isContentVisible ? 'active' : ''}`}>
         <button 
           className="video-control-btn play-pause-btn"
           onClick={(e) => {

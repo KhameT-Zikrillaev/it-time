@@ -22,7 +22,7 @@ const CourseForm = () => {
 
   return (
     <>
-      <form onSubmit={onSubmit} className="form-container">
+      <form onSubmit={onSubmit} className="form-container" data-aos-offset="100" data-aos="zoom-in">
         <div className="form-group">
           <input 
             type="text" 

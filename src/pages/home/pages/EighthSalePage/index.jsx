@@ -17,7 +17,7 @@ const EighthSalePage = () => {
 
   return (
     <section className="sale-section">
-      <div className="sale-container">
+      <div className="sale-container overflow-hidden">
         <div className="sale-image">
           <img
             src="https://i.pinimg.com/originals/23/bb/ff/23bbff5b10f1baee12dba6be34665dea.jpg"
@@ -35,12 +35,12 @@ const EighthSalePage = () => {
         <div className="sale-content">
           <div className="sale-header">
             <span className="sale-label"> {t('home.EighthSalePage.offer.label')}</span>
-            <h2 className="sale-title">
+            <h2 className="sale-title" data-aos="zoom-out-up" data-aos-offset="100">
               {t('home.EighthSalePage.offer.title.part1')}<br/>
-              <span className="highlight">{t('home.EighthSalePage.offer.title.highlight')}</span> {t('home.EighthSalePage.offer.title.part2')}
+              <span className="highlight" >{t('home.EighthSalePage.offer.title.highlight')}</span> {t('home.EighthSalePage.offer.title.part2')}
             </h2>
           </div>
-          <div className="sale-info">
+          <div className="sale-info" data-aos="zoom-out-up" data-aos-offset="100">
             <p className="sale-description">
               {t('home.EighthSalePage.content.description')}
             </p>

@@ -44,29 +44,31 @@ const SixthRezumePage = () => {
   };
 
   return (
-    <div className="resume-container">
+    <div className="resume-container overflow-hidden">
       <div className="form-tabs">
         <button 
           className={`tab-button ${activeForm === 'course' ? 'active' : ''}`}
           onClick={() => setActiveForm('course')}
+          data-aos="fade-right" data-aos-offset="100"
         >
           {t('home.SixthRezumePage.tabs.course')}
         </button>
         <button 
           className={`tab-button ${activeForm === 'job' ? 'active' : ''}`}
           onClick={() => setActiveForm('job')}
+          data-aos="fade-left" data-aos-offset="100"
         >
           {t('home.SixthRezumePage.tabs.job')}
         </button>
       </div>
 
       <div className="resume-content">
-        <div className="resume-left">
+        <div className="resume-left" >
           {activeForm === 'job' ? (
             <>
-              <h2>{t('home.SixthRezumePage.job.title')}</h2>
+              <h2  >{t('home.SixthRezumePage.job.title')}</h2>
               <p>{t('home.SixthRezumePage.job.description')}</p>
-              <div className="features">
+              <div className="features" >
                 {jobFeatures.map((feature, index) => (
                   <FeatureCard key={index} {...feature} />
                 ))}

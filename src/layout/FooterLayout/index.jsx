@@ -76,20 +76,20 @@ export default function FooterLayout() {
       ))}
 
       {/* Glowing Effect */}
-      <div className="footer-glow" />
+      <div className="footer-glow overflow-hidden" />
 
       <div className="max-w-[1400px] mx-auto w-[95%] py-16 relative">
         {/* Top Section with Grid */}
         <div className="grid px-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* About Section */}
           <div className="space-y-6 group">
-            <h3 className="footer-heading text-3xl font-bold text-black">
+            <h3 className="footer-heading text-3xl font-bold text-black" data-aos="fade-right" data-aos-offset="100">
               {t('footer.about.title')}
             </h3>
             <p className="text-black text-sm leading-relaxed transform transition-all duration-300 group-hover:translate-x-2">
               {t('footer.about.description')}
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4" data-aos="fade-up" data-aos-offset="100">
               {[
                 { icon: FaFacebookF, link: 'https://www.instagram.com/it_time_academy/' },
                 { icon: FaInstagram, link: 'https://www.instagram.com/it_time_academy/' },
@@ -115,10 +115,10 @@ export default function FooterLayout() {
 
           {/* Courses Section */}
           <div className="space-y-6">
-            <h4 className="footer-heading text-xl font-bold text-black">
+            <h4 className="footer-heading text-xl font-bold text-black" data-aos="fade-right" data-aos-offset="100">
               {t('footer.courses.title')}
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3" data-aos="fade-up" data-aos-offset="100">
               {[
                 { title: t('header.menu.home'), path: '/' },
                 { title: t('header.menu.courses'), path: '/courses' },
@@ -150,10 +150,10 @@ export default function FooterLayout() {
 
           {/* Contact Section */}
           <div className="space-y-6 lg:col-start-4">
-            <h4 className="footer-heading text-xl font-bold text-black">
+            <h4 className="footer-heading text-xl font-bold text-black" data-aos="fade-right" data-aos-offset="100">
               {t('footer.contact.title')}
             </h4>
-            <ul className="space-y-4">
+            <ul className="space-y-4" data-aos="fade-up" data-aos-offset="100">
               {[
                 { icon: FaMapMarkerAlt, text: t('footer.contact.address') },
                 { icon: FaPhoneAlt, text: t('footer.contact.phone') },

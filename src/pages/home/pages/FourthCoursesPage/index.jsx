@@ -21,12 +21,14 @@ const FourthCoursesPage = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
+        
       >
         <motion.h2
           className="courses-title"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          
         >
           {t('home.FourthCoursesPage.title')}
         </motion.h2>
@@ -37,6 +39,7 @@ const FourthCoursesPage = () => {
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
+              
             >
               <AccordionItem
                 title={t(`home.FourthCoursesPage.${title}`)}
@@ -47,6 +50,7 @@ const FourthCoursesPage = () => {
                 }))}
                 isOpen={openSection === title}
                 onClick={() => handleClick(title)}
+                
               />
             </motion.div>
           ))}

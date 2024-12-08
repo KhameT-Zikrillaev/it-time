@@ -22,15 +22,15 @@ export default function AllIntro() {
                 <CoruselIntro />
               </div>
               {/* Левая часть с текстом */}
-              <div className="text-center lg:text-left space-y-6 order-2 sm:order-1">
-                <h2 className="text-3xl sm:text-4xl px-2 md:pl-12  xl:pl-2  lg:text-5xl font-bol">
+              <div className="text-center lg:text-left space-y-6 order-2 sm:order-1" data-aos-offset="100">
+                <h2 className="text-3xl sm:text-4xl px-2 md:pl-12  xl:pl-2  lg:text-5xl font-bol" data-aos="fade-up">
                   {t('home.FirstIntroPage.title')}
                 </h2>
-                <p className="text-lg  md:pl-12  xl:pl-2  text-gray-300 px-4">
+                <p className="text-lg  md:pl-12  xl:pl-2  text-gray-300 px-4" data-aos="fade-left">
                   {t('home.FirstIntroPage.description')}
                 </p>
                 <button 
-                  onClick={() => setIsModalOpen(true)}
+                  onClick={() => setIsModalOpen(true)} data-aos="fade-up"
                   className="bg-red-600  md:ml-12  xl:ml-2 text-white px-8 py-3 rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300 animated-button"
                 >
                   {t('home.FirstIntroPage.button')}
@@ -50,7 +50,7 @@ export default function AllIntro() {
                 { icon: FaHtml5, name: t('home.FirstIntroPage.technologies.html') },
                 { icon: FaCss3Alt, name: t('home.FirstIntroPage.technologies.css') }
               ].map((tech, index) => (
-                <div key={index} className="custom-card">
+                <div key={index} className="custom-card" data-aos-offset="200" data-aos="fade-up">
                   <tech.icon size={34} />
                   <p>{tech.name}</p>
                 </div>

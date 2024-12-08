@@ -15,6 +15,7 @@ const AccordionItem = ({ title, items, isOpen, onClick }) => {
         onClick={onClick}
         whileHover={{ scale: 1.01 }}
         whileTap={{ scale: 0.99 }}
+        data-aos="fade-right" data-aos-offset="100"
       >
         <motion.span>{title}</motion.span>
         <motion.span

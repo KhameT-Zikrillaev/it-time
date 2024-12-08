@@ -12,7 +12,7 @@ const SecondAboutPage = () => {
       <div className="container mx-auto px-4">
         {/* Заголовок секции */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4" data-aos-offset="100" data-aos="fade-right">
             {t('home.SecondAboutPage.title')}
           </h2>
           <div className="w-24 h-1 bg-red-600 mx-auto"></div>

@@ -10,7 +10,7 @@ const MentorCard = ({ mentor }) => {
   return (
     <div className="flex flex-col md:flex-row bg-white rounded-2xl overflow-hidden shadow-lg max-w-5xl mx-auto">
       {/* Левая часть с изображением */}
-      <div className="relative w-full md:w-[280px]">
+      <div className="relative w-full md:w-[280px] " data-aos="fade-left" data-aos-offset="100">
         <img 
           src={image} 
           alt={name[currentLang]} 
@@ -37,7 +37,7 @@ const MentorCard = ({ mentor }) => {
       </div>
 
       {/* Правая часть с информацией */}
-      <div className="flex-1 p-5 md:p-6 flex flex-col">
+      <div className="flex-1 p-5 md:p-6 flex flex-col" data-aos="fade-right" data-aos-offset="100">
         {/* Заголовок и позиция */}
         <div className="mb-4">
           <h3 className="text-2xl font-bold text-gray-900">

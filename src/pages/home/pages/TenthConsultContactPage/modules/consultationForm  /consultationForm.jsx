@@ -23,10 +23,10 @@ export default function ConsultationForm() {
   };
 
   return (
-    <div className="consultation-section min-h-[500px] flex items-center relative overflow-hidden py-8">
+    <div className="consultation-section min-h-[500px] flex items-center relative overflow-hidden py-8" >
       <div className="max-w-[1400px] mx-auto w-[95%] grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-8 relative z-10">
         {/* Images Section */}
-        <div className="consultation-images bg-white/10 backdrop-blur-xl rounded-2xl p-6 h-[320px] relative overflow-hidden">
+        <div className="consultation-images bg-white/10 backdrop-blur-xl rounded-2xl p-6 h-[320px] relative overflow-hidden" data-aos="fade-right" data-aos-offset="100">
           <div className="text-center px-4 relative mb-2">
             <h2 className="text-[clamp(20px,2vw,26px)] leading-normal text-[#1a1a1a]">
               {t('home.TenthConsultContactPage.consultation.mainText')}
@@ -41,7 +41,7 @@ export default function ConsultationForm() {
         </div>
 
         {/* Form Section */}
-        <div className="consultation-form bg-white/10 backdrop-blur-xl rounded-2xl p-6 h-[320px] flex flex-col relative">
+        <div className="consultation-form bg-white/10 backdrop-blur-xl rounded-2xl p-6 h-[320px] flex flex-col relative" data-aos="fade-left" data-aos-offset="100">
           <h3 className="text-2xl font-semibold text-[#1a1a1a] mb-6 text-center">
             {t('home.TenthConsultContactPage.consultation.form.title')}
           </h3>

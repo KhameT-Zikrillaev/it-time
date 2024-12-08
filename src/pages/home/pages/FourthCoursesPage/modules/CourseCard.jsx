@@ -5,6 +5,7 @@ const CourseCard = ({ item, index }) => {
   return (
     <motion.div
       className="course-card"
+      
       initial={{ opacity: 0, y: 50, scale: 0.3 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, y: -50, scale: 0.3 }}

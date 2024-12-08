@@ -5,7 +5,7 @@ export const PlaceholderCard = ({ card }) => {
   const { t } = useTranslation();
   
   return (
-    <div className="card-overlay">
+    <div className="card-overlay" >
       <div className="student-info">
         <div className="info-header">
           <h3 className="student-name">{card.name}</h3>

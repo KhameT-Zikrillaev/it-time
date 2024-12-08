@@ -8,7 +8,7 @@ const MentorCard = ({ mentor }) => {
   const { id, image, name, position, description, specialization, social } = mentor;
 
   return (
-    <div className="mentor-card">
+    <div className="mentor-card" data-aos-offset="100" data-aos="zoom-out-up">
       <div className="mentor-image-wrapper">
         <div className="dots-left"></div>
         <div className="dots-right"></div>

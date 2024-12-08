@@ -13,7 +13,7 @@ const FirstAboutPage = () => {
 
   return (
     <div className="about-section">
-      <div className="about-container">
+      <div className="about-container overflow-hidden">
         {/* Header Section */}
         <motion.div 
           className="about-header"
@@ -38,6 +38,7 @@ const FirstAboutPage = () => {
         <div className="features-grid">
           {features.map((feature, index) => (
             <FeatureCard 
+            
               key={index}
               Icon={feature.Icon}
               title={t(feature.titleKey)}

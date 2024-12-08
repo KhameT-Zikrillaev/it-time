@@ -50,16 +50,18 @@ export default function ThirdMoviePage() {
   return (
     <div className={`movie-page ${isIntersecting ? 'visible' : ''}`}>
       <div className="movie-header">
-        <h2 className="movie-title">{t('home.ThirdMoviePage.subtitle')}</h2>
+        <h2 className="movie-title" data-aos-offset="100" data-aos="fade-right">{t('home.ThirdMoviePage.subtitle')}</h2>
       </div>
 
-      <div className="movie-grid">
+      <div className="movie-grid"  >
         {studentCards.map((card) => (
           <div
+          
             key={card.id}
             className={`movie-card ${card.type} ${activeCard === card.id ? 'active' : ''}`}
             onMouseEnter={() => setActiveCard(card.id)}
             onMouseLeave={() => setActiveCard(null)}
+            
           >
             {card.type === 'video' ? (
               <VideoCard
@@ -68,9 +70,10 @@ export default function ThirdMoviePage() {
                 isPlaying={playingStates[card.id] || false}
                 handleVideoControl={(videoElement) => handleVideoControl(card.id, videoElement)}
                 i18n={i18n}
+                
               />
             ) : (
-              <PlaceholderCard card={card} />
+              <PlaceholderCard card={card}  />
             )}
           </div>
         ))}

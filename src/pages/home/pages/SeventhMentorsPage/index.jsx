@@ -16,10 +16,10 @@ const SeventhMentorsPage = () => {
     <section className="mentors-section">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent" data-aos-offset="100" data-aos="flip-left">
             {t('home.SeventhMentorsPage.title')}
           </h2>
-          <p className="mt-4 text-xl text-gray-600">
+          <p className="mt-4 text-xl text-gray-600" data-aos-offset="100" data-aos="flip-right">
             {t('home.SeventhMentorsPage.subtitle')}
           </p>
         </div>
