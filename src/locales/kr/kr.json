@@ -192,25 +192,35 @@
       },
       "forms": {
         "common": {
-          "fullName": "Исм фамилиянгиз",
-          "phone": "+998",
+          "fullName": "Исм фамилияингиз",
+          "phone": "Телефон рақамингиз",
           "submit": "Юбориш",
-          "thankYou": "Раҳмат!",
+          "thankYou": "Рахмат!",
           "willContact": "Ҳурматли {name}, сиз билан тез орада боғланамиз!"
+        },
+        "job": {
+          "email": "Эмайл манзилингиз",
+          "about": "Ўзингиз ҳақингизда",
+          "experience": "Иш тажрибангиз",
+          "skills": "Кўникмалариңиз",
+          "uploadResume": "Резюмени юклаш",
+          "chooseFile": "Файлни танланг",
+          "noFileChosen": "Файл танланмаган"
         },
         "course": {
           "selectCourse": "Курсни танланг",
-          "additionalMessage": "Қўшимча хабар",
           "courseTypes": {
-            "frontend": "Frontend дастурлаш",
-            "backend": "Backend дастурлаш",
-            "mobile": "Мобил дастурлаш"
-          }
+            "frontend": "Фронтенд",
+            "backend": "Бэкенд",
+            "mobile": "Мобил"
+          },
+          "additionalMessage": "Қўшимча хабар"
         },
         "errors": {
           "required": "Бу майдон тўлдирилиши шарт",
+          "invalidEmail": "Эмайл манзили нотўғри",
           "invalidPhone": "Телефон рақами нотўғри",
-          "invalidEmail": "Электрон почта манзили нотўғри"
+          "fileRequired": "Илтимос, резюме юкланг"
         }
       }
     },
