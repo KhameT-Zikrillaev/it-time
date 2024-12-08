@@ -20,7 +20,7 @@ const EighthSalePage = () => {
       <div className="sale-container">
         <div className="sale-image">
           <img
-            src="https://img.freepik.com/free-photo/two-happy-students-studying-discussing-homework-cafe_231208-11573.jpg"
+            src="https://i.pinimg.com/originals/23/bb/ff/23bbff5b10f1baee12dba6be34665dea.jpg"
             alt="Students Learning Together"
           />
           <div className="sale-badge">
