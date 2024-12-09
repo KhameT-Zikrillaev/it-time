@@ -35,9 +35,9 @@ export const mentorsData = [
       en: "With over ten years of development experience and five years of teaching, I have helped more than 500 students become professional developers. I have deep knowledge and practical experience in modern frontend technologies and programming methodologies."
     },
     social: {
-      linkedin: 'https://linkedin.com',
-      telegram: 'https://t.me/username',
-      github: 'https://github.com'
+      linkedin: 'https://uz.linkedin.com/in/rustambek-mamadaliyev-39b095214?original_referer=https%3A%2F%2Fwww.google.com%2F',
+      telegram: 'https://t.me/the_rustambek',
+      github: 'https://github.com/the-rustambek'
     }
   },
   {
@@ -137,9 +137,9 @@ export const mentorsData = [
       en: "As an experienced Frontend development teacher, I have extensive experience in teaching students modern web technologies."
     },
     social: {
-      linkedin: 'https://linkedin.com',
-      telegram: 'https://t.me/username',
-      github: 'https://github.com'
+      linkedin: 'https://uz.linkedin.com/in/behruz-nazarov-73b53926a',
+      telegram: 'https://t.me/Bexruzbek_Nazarov',
+      github: 'https://github.com/NazarovBehruzbek'
     }
   },
   {
@@ -171,9 +171,9 @@ export const mentorsData = [
       en: "As an experienced teacher in Python development and backend development, I have extensive experience in teaching students modern programming."
     },
     social: {
-      linkedin: 'https://linkedin.com',
-      telegram: 'https://t.me/username',
-      github: 'https://github.com'
+      linkedin: 'https://uz.linkedin.com/in/dilshod-xolmatov-928271243',
+      telegram: 'https://t.me/dilshoddevv',
+      github: 'https://uz.linkedin.com/in/dilshod-xolmatov-928271243'
     }
   },
   {
@@ -205,9 +205,9 @@ export const mentorsData = [
       en: "With over five years of experience in SMM and digital marketing, I have helped many brands achieve success in social networks."
     },
     social: {
-      linkedin: 'https://linkedin.com/in/oybek-abdufattoxov',
-      telegram: 'https://t.me/oybek_smm',
-      github: 'https://github.com/oybek'
+      linkedin: 'https://uz.linkedin.com/in/oybek-abdufattoxov-644997291',
+      telegram: 'https://t.me/Oybek_Abdufattoxov',
+      github: 'https://t.me/Oybek_Abdufattoxov'
     }
   }
 ];

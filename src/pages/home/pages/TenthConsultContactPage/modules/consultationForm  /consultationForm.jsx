@@ -28,9 +28,9 @@ export default function ConsultationForm() {
         {/* Images Section */}
         <div className="consultation-images bg-white/10 backdrop-blur-xl rounded-2xl p-6 h-[320px] relative overflow-hidden" data-aos="fade-right" data-aos-offset="100">
           <div className="text-center px-4 relative mb-2">
-            <h2 className="text-[clamp(20px,2vw,26px)] leading-normal text-[#1a1a1a]">
+            <h3 className="text-[clamp(20px,2vw,26px)] font-semibold leading-normal text-[#1a1a1a]">
               {t('home.TenthConsultContactPage.consultation.mainText')}
-            </h2>
+            </h3>
           </div>
           
           <div className="flex items-center justify-center gap-5 h-52 mt-2">

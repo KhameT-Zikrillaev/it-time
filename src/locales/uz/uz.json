@@ -108,7 +108,9 @@
         "hacker": [
           { "name": "Kiberhavfsizlik", "description": "Kiberhavfsizlik asoslari va himoya usullari" },
           { "name": "Etik hacking", "description": "Axloqiy hacking va tizimlarni testlash" },
-          { "name": "Tarmoq xavfsizligi", "description": "Tarmoq xavfsizligi va tahdidlardan himoya" }
+          { "name": "Tarmoq xavfsizligi", "description": "Tarmoq xavfsizligi va tahdidlardan himoya" },
+          { "name": "Penetration Testing", "description": "Zaifliklarni aniqlash va testlash" }, 
+          { "name": "Security Tools", "description": "Xavfsizlik vositalari va dasturlar" }
         ]
       }
     },

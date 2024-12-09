@@ -108,7 +108,9 @@
         "hacker": [
           { "name": "Cyber Security", "description": "Fundamentals of cyber security and protection methods" },
           { "name": "Ethical Hacking", "description": "Ethical hacking and system testing" },
-          { "name": "Network Security", "description": "Network security and threat protection" }
+          { "name": "Network Security", "description": "Network security and threat protection" },
+          { "name": "Penetration Testing","description": "Identifying and testing vulnerabilities" },
+          { "name": "Security Tools", "description": "Security tools and programs" }
         ]
       }
     },
