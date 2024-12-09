@@ -5,7 +5,7 @@ const AboutCard = ({ title, description, icon: Icon }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div  data-aos-offset="100" data-aos="zoom-in"
+    <div  data-aos-offset="50" data-aos="zoom-in"
       className="card-container perspective-1000"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

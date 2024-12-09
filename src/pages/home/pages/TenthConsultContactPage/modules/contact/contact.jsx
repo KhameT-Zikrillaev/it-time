@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="max-w-[1200px] mx-auto w-[90%] overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr,1.2fr] gap-8">
           {/* Contact Info Section */}
-          <div className="bg-white/90 p-6 rounded-2xl shadow-lg border border-white/50 h-[400px] flex flex-col" data-aos="fade-right" data-aos-offset="100">
+          <div className="bg-white/90 p-6 rounded-2xl shadow-lg border border-white/50 h-[400px] flex flex-col" data-aos="fade-right" data-aos-offset="50">
             <h2 className="text-2xl font-semibold text-[#1a1a1a] mb-4 relative inline-block flex-shrink-0">
               {t('home.TenthConsultContactPage.contact.title')}
               <span className="absolute bottom-[-6px] left-0 w-12 h-0.5 bg-gradient-to-r from-[#dc2626] to-[#ef4444]"></span>
@@ -68,7 +68,7 @@ export default function Contact() {
           </div>
 
           {/* Map Section */}
-          <div className="bg-white/90 rounded-2xl overflow-hidden shadow-lg border border-white/50 h-[400px]" data-aos="fade-left" data-aos-offset="100">
+          <div className="bg-white/90 rounded-2xl overflow-hidden shadow-lg border border-white/50 h-[400px]" data-aos="fade-left" data-aos-offset="50">
      
 
             <iframe 

@@ -34,7 +34,7 @@ export const VideoCard = ({ card, videoUrl, isPlaying, handleVideoControl, i18n 
         muted={isMuted}
         playsInline
         onClick={() => setIsContentVisible(true)}
-        data-aos="flip-left" data-aos-offset="100"
+        data-aos="flip-left" data-aos-offset="50"
       >
         <source src={videoUrl} type="video/mp4" />
         {t('home.ThirdMoviePage.browserNotSupported')}

@@ -50,7 +50,7 @@ export default function ThirdMoviePage() {
   return (
     <div className={`movie-page ${isIntersecting ? 'visible' : ''}`}>
       <div className="movie-header">
-        <h2 className="movie-title" data-aos-offset="100" data-aos="fade-right">{t('home.ThirdMoviePage.subtitle')}</h2>
+        <h2 className="movie-title" data-aos-offset="50" data-aos="fade-right">{t('home.ThirdMoviePage.subtitle')}</h2>
       </div>
 
       <div className="movie-grid"  >

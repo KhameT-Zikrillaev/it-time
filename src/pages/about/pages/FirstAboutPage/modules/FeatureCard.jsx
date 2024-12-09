@@ -7,7 +7,7 @@ const FeatureCard = ({ Icon, title, description }) => {
       className="feature-card"
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300 }}
-      data-aos="fade-left" data-aos-offset="100"
+      data-aos="fade-left" data-aos-offset="50"
     >
       <Icon className="feature-icon" />
       <h3 className="feature-title">{title}</h3>

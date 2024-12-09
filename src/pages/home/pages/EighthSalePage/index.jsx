@@ -35,12 +35,12 @@ const EighthSalePage = () => {
         <div className="sale-content">
           <div className="sale-header">
             <span className="sale-label"> {t('home.EighthSalePage.offer.label')}</span>
-            <h2 className="sale-title" data-aos="zoom-out-up" data-aos-offset="100">
+            <h2 className="sale-title" data-aos="zoom-out-up" data-aos-offset="50">
               {t('home.EighthSalePage.offer.title.part1')}<br/>
               <span className="highlight" >{t('home.EighthSalePage.offer.title.highlight')}</span> {t('home.EighthSalePage.offer.title.part2')}
             </h2>
           </div>
-          <div className="sale-info" data-aos="zoom-out-up" data-aos-offset="100">
+          <div className="sale-info" data-aos="zoom-out-up" data-aos-offset="50">
             <p className="sale-description">
               {t('home.EighthSalePage.content.description')}
             </p>

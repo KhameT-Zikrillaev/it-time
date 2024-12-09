@@ -10,12 +10,12 @@ export default function NinthWorkingPage() {
   return (
     <>
       <div className="working-team overflow-hidden">
-        <h2 className="team-title" data-aos="fade-right" data-aos-offset="100">{t('home.NinthWorkingPage.teamTitle')}</h2>
+        <h2 className="team-title" data-aos="fade-right" data-aos-offset="50">{t('home.NinthWorkingPage.teamTitle')}</h2>
         <div className="team-cards">
           {teamMembers.map((member, index) => {
             const teamKey = index === 0 ? 'frontend' : index === 1 ? 'backend' : 'smm';
             return (
-              <div key={index} className="team-card" data-aos="fade-up" data-aos-offset="100">
+              <div key={index} className="team-card" data-aos="fade-up" data-aos-offset="50">
                 <span className="card-icon">{member.icon}</span>
                 <img 
                   src={member.image} 
@@ -34,7 +34,7 @@ export default function NinthWorkingPage() {
         </div>
       </div>
       <div className="hamkor-team py-4">
-        <h2 className="team-title" data-aos="fade-right" data-aos-offset="100">{t('home.NinthWorkingPage.partnersTitle')}</h2>
+        <h2 className="team-title" data-aos="fade-right" data-aos-offset="50">{t('home.NinthWorkingPage.partnersTitle')}</h2>
         <Loopslider />
       </div>
     </>

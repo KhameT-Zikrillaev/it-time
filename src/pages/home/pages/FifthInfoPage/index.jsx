@@ -95,7 +95,7 @@ const StatCard = ({ icon, endNumber, index, duration, decimals = 0 }) => {
   }, [isVisible, endNumber, duration]);
 
   return (
-    <div ref={cardRef} className="stat-card"   data-aos="fade-right" data-aos-offset="100">
+    <div ref={cardRef} className="stat-card"   data-aos="fade-right" data-aos-offset="50">
       <div className="stat-icon">{icon}</div>
       <div className="stat-number">
         {formatNumber(number)}
@@ -115,7 +115,7 @@ const FifthInfoPage = () => {
   return (
     <div className="info-container">
       <div className="info-content">
-        <h2 className="info-title"   data-aos="fade-right" data-aos-offset="100">{t('home.FifthInfoPage.title')}</h2>
+        <h2 className="info-title"   data-aos="fade-right" data-aos-offset="50">{t('home.FifthInfoPage.title')}</h2>
 
         <div className="stats-grid">
           {statsData.map((stat, index) => (
@@ -132,12 +132,12 @@ const FifthInfoPage = () => {
         </div>
 
         <div className="additional-info">
-          <h3   data-aos="fade-right" data-aos-offset="100">{t('home.FifthInfoPage.subtitle')}</h3>
-          <p   data-aos="fade-left" data-aos-offset="100" >{t('home.FifthInfoPage.description')}</p>
+          <h3   data-aos="fade-right" data-aos-offset="50">{t('home.FifthInfoPage.subtitle')}</h3>
+          <p   data-aos="fade-left" data-aos-offset="50" >{t('home.FifthInfoPage.description')}</p>
 
           <div className="achievement-grid">
             {achievements.map((achievement, index) => (
-              <div key={index} className="achievement-item"  data-aos-offset="100" data-aos="flip-up">
+              <div key={index} className="achievement-item"  data-aos-offset="50" data-aos="flip-up">
                 <div className="achievement-icon">{achievement.icon}</div>
                 <div className="achievement-text">
                   {t(`home.FifthInfoPage.achievements.${index}.text`)}

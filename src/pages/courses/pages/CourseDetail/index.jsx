@@ -55,25 +55,25 @@ const CourseDetail = () => {
                 src={course.image}
                 alt={courseTranslation?.title}
                 className="w-full h-full object-contain"
-                data-aos="fade-up" data-aos-offset="100"
+                data-aos="fade-up" data-aos-offset="50"
               />
             </div>
             <div className="space-y-6">
               <div>
-                <h2 className="text-xl font-semibold mb-2 " data-aos="fade-left" data-aos-offset="100">{t('courses.aboutCourse')}</h2>
-                <p className="text-gray-600" data-aos="fade-up" data-aos-offset="100">
+                <h2 className="text-xl font-semibold mb-2 " data-aos="fade-left" data-aos-offset="50">{t('courses.aboutCourse')}</h2>
+                <p className="text-gray-600" data-aos="fade-up" data-aos-offset="50">
                   {courseTranslation?.description}
                 </p>
               </div>
               
               <div>
-                <h2 className="text-xl font-semibold mb-2 " data-aos="fade-right" data-aos-offset="100">{t('courses.duration')}</h2>
-                <p className="text-gray-600" data-aos="fade-up" data-aos-offset="100">
+                <h2 className="text-xl font-semibold mb-2 " data-aos="fade-right" data-aos-offset="50">{t('courses.duration')}</h2>
+                <p className="text-gray-600" data-aos="fade-up" data-aos-offset="50">
                   {courseTranslation?.duration}
                 </p>
               </div>
               <button 
-                onClick={handleOpenModal} data-aos="fade-up" data-aos-offset="100"
+                onClick={handleOpenModal} data-aos="fade-up" data-aos-offset="50"
                 className="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300 animated-button mt-4"
               >
                 {t('courses.moreDetails')}
@@ -83,13 +83,13 @@ const CourseDetail = () => {
 
           {/* Правая колонка с ценами */}
           <div className="p-6 bg-gray-50">
-            <h1 className="text-3xl  font-bold mb-6" data-aos="fade-left" data-aos-offset="100">
+            <h1 className="text-3xl  font-bold mb-6" data-aos="fade-left" data-aos-offset="50">
               {courseTranslation?.title}
             </h1>
 
             <div className="space-y-6">
               {/* Полная стоимость */}
-              <div className="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-offset="100">
+              <div className="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-offset="50">
                 <h2 className="text-xl text-gray-600 font-semibold mb-4">{t('courses.fullPrice')}</h2>
                 <div className="space-y-4">
                   <div>
@@ -110,7 +110,7 @@ const CourseDetail = () => {
               </div>
 
               {/* Рассрочка */}
-              <div className="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-offset="100">
+              <div className="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-offset="50">
                 <h2 className="text-xl text-gray-600 font-semibold mb-4">{t('courses.installmentTitle')}</h2>
                 <div className="space-y-4">
                   <div>
