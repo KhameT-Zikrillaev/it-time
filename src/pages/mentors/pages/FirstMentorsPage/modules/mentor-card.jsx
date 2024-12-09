@@ -13,23 +13,28 @@ const MentorCard = ({ mentor }) => {
       <div className="relative w-full md:w-[280px] " data-aos="fade-left" data-aos-offset="100">
         <img 
           src={image} 
-          alt={name[currentLang]} 
+          alt={`${name[currentLang]} - ${position[currentLang]} at IT TIME ACADEMY`}
+          title={`${name[currentLang]} - ${position[currentLang]}`}
           className="w-full h-[250px] md:h-[280px] object-cover"
+          loading="lazy"
         />
         {/* Градиентный оверлей */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
           {/* Социальные иконки внизу изображения */}
           <div className="absolute bottom-4 left-4 flex items-center gap-3">
             <a href={social.linkedin} target="_blank" rel="noopener noreferrer" 
-               className="text-white text-xl bg-blue-600/80 p-2 rounded-lg">
+               className="text-white text-xl bg-blue-600/80 p-2 rounded-lg"
+               aria-label={`${name[currentLang]} LinkedIn profile`}>
               <FaLinkedin />
             </a>
             <a href={social.telegram} target="_blank" rel="noopener noreferrer"
-               className="text-white text-xl bg-blue-400/80 p-2 rounded-lg">
+               className="text-white text-xl bg-blue-400/80 p-2 rounded-lg"
+               aria-label={`${name[currentLang]} Telegram profile`}>
               <FaTelegram />
             </a>
             <a href={social.github} target="_blank" rel="noopener noreferrer"
-               className="text-white text-xl bg-gray-800/80 p-2 rounded-lg">
+               className="text-white text-xl bg-gray-800/80 p-2 rounded-lg"
+               aria-label={`${name[currentLang]} GitHub profile`}>
               <FaGithub />
             </a>
           </div>

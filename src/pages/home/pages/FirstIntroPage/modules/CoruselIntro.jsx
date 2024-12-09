@@ -66,10 +66,16 @@ export default function CoruselIntro() {
             'w-40 h-40'} logo-container`}>
           <div className="logo-shadow"></div>
           <div className="logo-ring"></div>
-          <div className="bg-white rounded-full w-full h-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300">
-            <img className={window.innerWidth < 400 ? 'w-[50px]' : 
-              window.innerWidth < 768 ? 'w-[70px]' : 
-              'w-[100px]'} src={logo} alt="" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <img 
+              src={logo} 
+              alt="IT TIME ACADEMY - Center Logo" 
+              title="IT TIME ACADEMY - Programming Education Center"
+              className={`${window.innerWidth < 400 ? 'w-24 h-24' : 'w-32 h-32'} rounded-full shadow-lg`}
+              loading="eager"
+              width={window.innerWidth < 400 ? "96" : "128"}
+              height={window.innerWidth < 400 ? "96" : "128"}
+            />
           </div>
         </div>
       </div>

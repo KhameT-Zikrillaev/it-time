@@ -29,8 +29,16 @@ export default function Navbar() {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <a href="/" className="text-xl font-bold">
-                <img className='w-[140px]' src={logo} alt="" />
+              <a href="/" className="text-xl font-bold" aria-label="IT TIME ACADEMY - Home">
+                <img 
+                  className='w-[140px]' 
+                  src={logo} 
+                  alt="IT TIME ACADEMY Logo" 
+                  title="IT TIME ACADEMY - Programming Courses in Uzbekistan"
+                  loading="eager"
+                  width="140"
+                  height="auto"
+                />
               </a>
             </div>
 

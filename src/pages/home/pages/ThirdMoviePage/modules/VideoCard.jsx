@@ -35,6 +35,8 @@ export const VideoCard = ({ card, videoUrl, isPlaying, handleVideoControl, i18n 
         playsInline
         onClick={() => setIsContentVisible(true)}
         data-aos="flip-left" data-aos-offset="50"
+        title={t('home.ThirdMoviePage.videoTitle')}
+        aria-label={t('home.ThirdMoviePage.videoDescription')}
       >
         <source src={videoUrl} type="video/mp4" />
         {t('home.ThirdMoviePage.browserNotSupported')}

@@ -22,9 +22,12 @@ export default function FirstContactPageForm() {
       <form 
         onSubmit={onSubmit}
         className="max-w-md mx-auto space-y-6"
+        role="form"
+        aria-label={t('contact.FirstContactPage.form.title')}
       >
-        <div>
+        <div role="group" aria-labelledby="name-label">
           <label 
+            id="name-label"
             htmlFor="name" 
             className="block text-sm font-medium text-gray-700 mb-1"
           >
@@ -38,16 +41,20 @@ export default function FirstContactPageForm() {
             onChange={(e) => handleFormChange(e, setFormData)}
             placeholder={t('contact.FirstContactPage.form.name.placeholder')}
             className={`w-full px-4 py-3 rounded-lg border ${errors.name ? 'border-red-500' : 'border-gray-300'} focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200`}
+            aria-required="true"
+            aria-invalid={errors.name ? "true" : "false"}
+            aria-describedby={errors.name ? "name-error" : undefined}
           />
           {errors.name && (
-            <p className="mt-1 text-sm text-red-500">
+            <p id="name-error" className="mt-1 text-sm text-red-500" role="alert">
               {t(`contact.FirstContactPage.form.name.errors.${errors.name}`)}
             </p>
           )}
         </div>
 
-        <div>
+        <div role="group" aria-labelledby="phone-label">
           <label 
+            id="phone-label"
             htmlFor="phone" 
             className="block text-sm font-medium text-gray-700 mb-1"
           >
@@ -61,11 +68,13 @@ export default function FirstContactPageForm() {
             onChange={(e) => handleFormChange(e, setFormData)}
             placeholder={t('contact.FirstContactPage.form.phone.placeholder')}
             className={`w-full px-4 py-3 rounded-lg border ${errors.phone ? 'border-red-500' : 'border-gray-300'} focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200`}
-            pattern="[+][0-9]*"
-            inputMode="numeric"
+            aria-required="true"
+            aria-invalid={errors.phone ? "true" : "false"}
+            aria-describedby={errors.phone ? "phone-error" : undefined}
+            pattern="\+998[0-9]{9}"
           />
           {errors.phone && (
-            <p className="mt-1 text-sm text-red-500">
+            <p id="phone-error" className="mt-1 text-sm text-red-500" role="alert">
               {t(`contact.FirstContactPage.form.phone.errors.${errors.phone}`)}
             </p>
           )}
@@ -73,7 +82,8 @@ export default function FirstContactPageForm() {
 
         <button
           type="submit"
-          className="w-full bg-gradient-to-r from-red-600 to-red-500 text-white py-3 px-6 rounded-lg hover:from-red-500 hover:to-red-600 transition duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+          className="w-full bg-red-600 text-white py-3 px-6 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition duration-200"
+          aria-label={t('contact.FirstContactPage.form.submit')}
         >
           {t('contact.FirstContactPage.form.submit')}
         </button>
