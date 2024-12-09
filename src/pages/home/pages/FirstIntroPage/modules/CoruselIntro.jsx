@@ -71,10 +71,11 @@ export default function CoruselIntro() {
               src={logo} 
               alt="IT TIME ACADEMY - Center Logo" 
               title="IT TIME ACADEMY - Programming Education Center"
-              className={`${window.innerWidth < 400 ? 'w-24 h-24' : 'w-32 h-32'} rounded-full shadow-lg`}
+              className={window.innerWidth < 400 ? 'w-[50px]' : 
+                window.innerWidth < 768 ? 'w-[70px]' : 
+                'w-[100px]'}
               loading="eager"
-              width={window.innerWidth < 400 ? "96" : "128"}
-              height={window.innerWidth < 400 ? "96" : "128"}
+   
             />
           </div>
         </div>

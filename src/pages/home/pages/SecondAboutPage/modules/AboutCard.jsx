@@ -46,10 +46,7 @@ const AboutCard = ({ title, description, icon: Icon }) => {
               {/* Описание */}
               <div className="relative bg-white/90 p-2 rounded-xl backdrop-blur-sm">
                 <p className="text-lg text-gray-800 leading-relaxed">
-                  {description}
-                  <span className="block text-sm text-gray-500 mt-2 text-right">
-                    {Icon.name.replace('Fa', '').replace(/([A-Z])/g, ' $1').trim()}
-                  </span>
+                  {description}          
                 </p>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent highlight-scanner rounded-xl"></div>
               </div>
